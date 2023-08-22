@@ -2027,7 +2027,7 @@
       </div>
       <div class="el-table__column-resize-proxy" style="display: none"></div>
     </div>
-    <h4>B. 词汇多样性和词汇密度指标（13个）</h4>
+    <h4>B. 词汇多样性和词汇密度指标（11个）</h4>
     <div
       class="el-table--fit el-table--striped el-table--scrollable-x el-table--enable-row-hover el-table--enable-row-transition el-table el-table--layout-fixed is-scrolling-left"
       data-prefix="el"
@@ -2325,58 +2325,6 @@
                         colspan="1"
                       >
                         <div class="cell"><!---->11</div>
-                      </td>
-                      <td
-                        class="el-table_2_column_5 el-table__cell"
-                        rowspan="1"
-                        colspan="1"
-                      >
-                        <div class="cell"><!---->LEXICAL_MLTD_MA_WRAP</div>
-                      </td>
-                      <td
-                        class="el-table_2_column_6 el-table__cell"
-                        rowspan="1"
-                        colspan="1"
-                      >
-                        <div class="cell">
-                          <!---->Measure of lexical textual diversity (moving
-                          average, wrap)
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class="el-table__row el-table__row--striped">
-                      <td
-                        class="el-table_2_column_4 el-table__cell"
-                        rowspan="1"
-                        colspan="1"
-                      >
-                        <div class="cell"><!---->12</div>
-                      </td>
-                      <td
-                        class="el-table_2_column_5 el-table__cell"
-                        rowspan="1"
-                        colspan="1"
-                      >
-                        <div class="cell"><!---->LEXICAL_MLTD_MA_BID</div>
-                      </td>
-                      <td
-                        class="el-table_2_column_6 el-table__cell"
-                        rowspan="1"
-                        colspan="1"
-                      >
-                        <div class="cell">
-                          <!---->Measure of lexical textual diversity (moving
-                          average, bi-directional)
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class="el-table__row">
-                      <td
-                        class="el-table_2_column_4 el-table__cell"
-                        rowspan="1"
-                        colspan="1"
-                      >
-                        <div class="cell"><!---->13</div>
                       </td>
                       <td
                         class="el-table_2_column_5 el-table__cell"
