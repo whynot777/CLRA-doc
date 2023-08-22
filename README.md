@@ -20,7 +20,7 @@
     <h3>2. 词表生成与词汇丰富性指标分析</h3>
     在此模式下，用户批量上传txt文件。词表生成功能可基于新标准词表生成各等级词表，以表格为形式输出各级别具体词汇。
     指标分析功能可从词汇多样性、词汇密度、基于新标准词表等多个角度对语篇的词汇量化指标进行分析输出,该分析模式下只能选中一种词表/指标类型。（注：词汇多样性工具来自：https://github.com/kristopherkyle/lexical_diversity）
-    <h3>附录：词汇丰富性分析指标类型介绍</h3>
+    <h3>附录：词汇维度分析指标类型介绍</h3>
     <h4>A. 新标准等级词表指标（80个）</h4>
     <div
       class="el-table--fit el-table--striped el-table--scrollable-x el-table--enable-row-hover el-table--enable-row-transition el-table el-table--layout-fixed is-scrolling-left"
