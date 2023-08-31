@@ -427,35 +427,8 @@
           mso-bidi-font-family: 'Times New Roman';
           color: red;
         "
-        >右键</span
+        >右键点击</span
       ></b
-    ></code
-  ><b style="mso-bidi-font-weight: normal"
-    ><span
-      style="
-        mso-bidi-font-size: 10.5pt;
-        line-height: 150%;
-        font-family: 宋体;
-        mso-ascii-font-family: 'Times New Roman';
-        mso-hansi-font-family: 'Times New Roman';
-        mso-bidi-font-family: 'Times New Roman';
-        color: red;
-        background: white;
-      "
-      >点击</span
-    ></b
-  ><code
-    ><span
-      style="
-        mso-ansi-font-size: 10.5pt;
-        mso-bidi-font-size: 10.5pt;
-        line-height: 150%;
-        mso-ascii-font-family: 'Times New Roman';
-        mso-hansi-font-family: 'Times New Roman';
-        mso-bidi-font-family: 'Times New Roman';
-        color: #1f2328;
-      "
-      >打开</span
     ></code
   ><span
     style="
@@ -468,7 +441,7 @@
       color: #1f2328;
       background: white;
     "
-    >，为方便后续使用，还可将程序拖至</span
+    >打开，为方便后续使用，还可将程序拖至</span
   ><span
     lang="EN-US"
     style="
@@ -3443,17 +3416,6 @@
     style="font-family: 'Times New Roman', serif; mso-fareast-font-family: 宋体"
     ><o:p></o:p
   ></span>
-</p>
-
-<p class="MsoNormal">
-  <span
-    lang="EN-US"
-    style="
-      font-family: 'Times New Roman', serif;
-      mso-fareast-font-family: 微软雅黑;
-    "
-    ><o:p>&nbsp;</o:p></span
-  >
 </p>
 
 <p class="MsoNormal" align="left" style="text-align: left; line-height: 150%">
@@ -12595,3 +12557,43 @@
     </td>
   </tr>
 </table>
+
+
+<hr align="left" size="1" width="33%" />
+
+<p class="MsoFootnoteText">
+  <a
+    style="mso-footnote-id: ftn1"
+    href="#_ftnref1"
+    name="_ftn1"
+    title=""
+    ><span class="MsoFootnoteReference"
+      ><span lang="EN-US"
+        ><span style="mso-special-character: footnote"
+          ><![if !supportFootnotes]><span class="MsoFootnoteReference"
+            ><span
+              lang="EN-US"
+              style="
+                font-size: 9pt;
+                font-family: DengXian;
+                mso-ascii-theme-font: minor-latin;
+                mso-fareast-theme-font: minor-fareast;
+                mso-hansi-theme-font: minor-latin;
+                mso-bidi-font-family: 'Times New Roman';
+                mso-bidi-theme-font: minor-bidi;
+                mso-ansi-language: EN-US;
+                mso-fareast-language: ZH-CN;
+                mso-bidi-language: AR-SA;
+              "
+              >[1]</span
+            ></span
+          ><![endif]></span
+        ></span
+      ></span
+    ></a
+  ><span lang="EN-US">
+    <a href="https://github.com/kristopherkyle/lexical_diversity"
+      >https://github.com/kristopherkyle/lexical_diversity</a
+    >
+  </span>
+</p>
