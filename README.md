@@ -216,7 +216,7 @@ CLRA 将持续迭代和更新，并集成更多丰富的功能，如果您对CLR
 | 3        | LEXICAL_TTR          | Simple TTR                                  |
 | 4        | LEXICAL_RTTR         | Root TTR                                    |
 | 5        | LEXICAL_LOG_TTR      | Log TTR                                     |
-| 6        | LEXICAL_MASS_TTR     | Mass TTR                                    |
+| 6        | LEXICAL_MAAS_TTR     | Maas TTR                                    |
 | 7        | LEXICAL_MSTTR        | Mean segmental TTR (MSTTR)                  |
 | 8        | LEXICAL_MATTR        | Moving average TTR (MATTR)                  |
 | 9        | LEXICAL_HDD          | Hypergeometric distribution D (HDD)         |
