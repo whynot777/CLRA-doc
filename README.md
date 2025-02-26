@@ -1,21 +1,24 @@
-<h2 align="center">CLRA中文词汇特征分析器 V2.0 使用手册</h2>
+<h2 align="center">CLRA中文词汇特征分析器 V2.2 使用手册</h2>
 
-<p align="center">2024/08/10</p>
+<p align="center">2025/02/22</p>
 
 **CLRA 工具 (Chinese Lexical Richness Analyzer)** 由北京师范大学国际中文教育学院胡韧奋课题组主持研发，旨在为国际中文教育和语文教育领域的文本分析、教材编撰、考试命题等工作提供 **词汇维度** 的量化分析支持。
 
 2023年9月，CLRA V1.0发布，其参考《国际中文教育中文水平等级标准》三等九级词表，支持文本标注（分词、词性、词语等级）、词表生成、词汇复杂度和词汇多样性等多维度指标分析功能。
 
-**2024年6月，CLRA V2.0问世，依托课题组最新研究成果进行了如下更新：**
+**2024年6月至今，CLRA V2.0系列相继问世，依托课题组最新研究成果进行了如下更新：**
 
 - 词语标注：新增基于《义务教育常用词表（草案）》（2019）的等级标注与词表生成功能，为中文母语教育提供支持；
 
-- 词汇指标分析：支持词汇复杂度、词汇多样性、词汇密度和词汇长度等四个维度共60项指标分析。其中，词汇复杂度维度不仅新增了义务教育词表类指标，还扩充了基于词语常用度、词义和认知特征的指标：
+- 词汇指标分析：支持词汇复杂度、词汇多样性、词汇密度和词汇长度等四个维度共60余项指标分析。其中，词汇复杂度维度不仅新增了义务教育词表类指标，还扩充了基于词语常用度、词义和认知特征的指标：
   - 词语等级类指标：提供了分别基于《新标准》词表和义务教育词表的等级指标；
   - 词语常用度类指标：包括基于母语者教材语料库、二语教材语料库、通用现代汉语语料库的词语分布范围和词频类指标；
-  - 词义认知类指标：提供了基于词语上下位信息、义项数量、阅读停留时间、平均注视时长等词义认知类特征的指标。
+  - 词义认知类指标：提供了基于词语上下位信息、义项数量、词义抽象性、语义透明度、注视时长等词义认知类特征的指标。
 
 上述指标均经过筛选、验证，是受文本长度影响较小、预测效力较强的词汇丰富性指标。
+
+- V2.1版本：增加了Windows版程序窗口大小自适应功能。
+- V2.2版本：修复了词语常用度、词义认知类指标计算中的bug。
 
 ## 1. 下载分析器
 
@@ -27,7 +30,7 @@ CLRA 工具提供了Windows, MacOS (Intel), MacOS (Apple M1-M3)三种客户端�
 
 <div align="center"><img src="images/image1.png" width="60%" /></div>
 
-<div align="center"><small>CLRA V2.0 界面</small></div>
+<div align="center"><small>CLRA V2.0 系列工具界面</small></div>
 
 ## 2. 文本标注工具
 
@@ -101,29 +104,29 @@ CLRA 工具提供了Windows, MacOS (Intel), MacOS (Apple M1-M3)三种客户端�
 
 ### 3.3 词汇丰富性指标分析功能
 
-词汇复杂度、词汇多样性、词汇密度和词汇长度是常见的语言量化分析指标。CLRA V2.0在这四个维度都提供了较为全面的量化指标。这60个指标经过了稳定性、预测效力和独立性三个方面的检验和筛选。
+词汇复杂度、词汇多样性、词汇密度和词汇长度是常见的语言量化分析指标。CLRA V2.2在这四个维度都提供了较为全面的量化指标。这60余个指标经过了稳定性、预测效力和独立性三个方面的检验和筛选。
 
 #### 3.3.1 词汇复杂度
 
-CLRA V2.0在词汇复杂度分析方面进行了大幅度更新，不仅新增了义务教育词表类指标，还扩充了基于词语常用度、词义和认知特征的指标：
+CLRA V2.2在词汇复杂度分析方面进行了大幅度更新，不仅新增了义务教育词表类指标，还扩充了基于词语常用度、词义和认知特征的指标：
 
 - 词语等级类指标：提供了分别基于《新标准》词表和义务教育词表的等级指标；
 
 - 词语常用度类指标：包括基于母语者教材语料库、二语教材语料库、通用现代汉语语料库的词语分布范围和词频类指标；
 
-- 词义认知类指标：提供了基于词语上下位信息、义项数量、阅读停留时间、平均注视时长等词义认知类特征的指标。
+- 词义认知类指标：提供了基于词语上下位信息、义项数量、词义抽象性、语义透明度、注视时长等词义认知类特征的指标。
 
-词汇复杂度指标共计42个，其具体描述可参考《使用手册》附录。
+词汇复杂度指标共计45个，其具体描述可参考《使用手册》附录。
 
 #### 3.3.2 词汇多样性、词汇密度和词汇长度
 
-CLRA V2.0提供了多维度的词汇多样性、词汇密度和词汇长度测量方法，包括8个词汇多样性指标，7个词汇密度类指标，3个词语长度类指标。
+CLRA V2.2提供了多维度的词汇多样性、词汇密度和词汇长度测量方法，包括8个词汇多样性指标，7个词汇密度类指标，3个词语长度类指标。
 
 上述指标描述可参考《使用手册》附录。
 
 #### 3.3.3 使用参考信息
 
-前期实验发现，有48个指标在二语学习者写作质量评估研究中预测效力较好，这些指标在《使用手册》中的附录中以 `“*”` 号标记；有52个指标适用于二语教材文本难度分级研究，这些指标在《使用手册》中的附录中以“#”号标注。
+前期实验发现，有51个指标在二语学习者写作质量评估研究中预测效力较好，这些指标在《使用手册》中的附录中以“*”号标记；有53个指标适用于二语教材文本难度分级研究，这些指标在《使用手册》中的附录中以“#”号标注。
 
 根据不同应用场景下的实际需求，我们针对词汇复杂度、词汇多样性、词汇密度和词汇长度四个维度提出了指标应用参考建议，具体建议可参考本工具的相关论文。
 
@@ -177,7 +180,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_1_Token_Raito*</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_1_Token_Ratio*</span></p>
   </td>
   <td width=288 style='width:216.3pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -196,7 +199,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_2_Token_Raito#</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_2_Token_Ratio#</span></p>
   </td>
   <td width=288 style='width:216.3pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -215,7 +218,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_3_Token_Raito*#</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_3_Token_Ratio*#</span></p>
   </td>
   <td width=288 style='width:216.3pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -234,7 +237,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_4_Token_Raito*</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_4_Token_Ratio*</span></p>
   </td>
   <td width=288 style='width:216.3pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -253,7 +256,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_oov_Token_Raito*#</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_oov_Token_Ratio*#</span></p>
   </td>
   <td width=288 style='width:216.3pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -272,7 +275,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_1_Type_Raito*</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_1_Type_Ratio*</span></p>
   </td>
   <td width=288 style='width:216.3pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -291,7 +294,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_2_Type_Raito*#</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_2_Type_Ratio*#</span></p>
   </td>
   <td width=288 style='width:216.3pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -310,7 +313,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_3_Type_Raito*#</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_3_Type_Ratio*#</span></p>
   </td>
   <td width=288 style='width:216.3pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -329,7 +332,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_4_Type_Raito*</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_4_Type_Ratio*</span></p>
   </td>
   <td width=288 style='width:216.3pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -348,7 +351,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_oov_Type_Raito*#</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Voc_Level_oov_Type_Ratio*#</span></p>
   </td>
   <td width=288 style='width:216.3pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -837,6 +840,25 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Textbook_Type_Mean_Frequency*</span></p>
+  </td>
+  <td width=288 style='width:216.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
+  line-height:normal'><span style='font-size:10.0pt;font-family:宋体;color:black'>母语教材平均对数词频</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>36</span></p>
+  </td>
+  <td width=233 style='width:174.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
   line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>L1_Textbook_Type_Mean_Range*#</span></p>
   </td>
   <td width=288 style='width:216.3pt;border-top:none;border-left:none;
@@ -850,7 +872,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>36</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>37</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -869,7 +891,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>37</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>38</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -888,7 +910,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>38</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>39</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -917,13 +939,13 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>39</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>40</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>Hypernyms_Type_Mean_Num*#</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>Hypernyms_Type_Mean_Num*</span></p>
   </td>
   <td width=288 style='width:216.3pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -936,7 +958,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>40</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>41</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -955,28 +977,65 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>41</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>42</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>Mean_FPF*#</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>Word_Abstractness*#</span></p>
   </td>
   <td width=288 style='width:216.3pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span style='font-size:10.0pt;font-family:宋体;color:black'>首遍阅读停留时间比例（</span><span
-  lang=EN-US style='font-size:10.0pt;color:black'>First-pass reading fixation
-  proportion</span><span style='font-size:10.0pt;font-family:宋体;color:black'>）平均值</span></p>
+  line-height:normal'><span style='font-size:10.0pt;font-family:宋体;color:black'>词义抽象性</span></p>
   </td>
  </tr>
  <tr>
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>42</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>43</span></p>
+  </td>
+  <td width=233 style='width:174.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>Semantic_Transparency*#</span></p>
+  </td>
+  <td width=288 style='width:216.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
+  line-height:normal'><span style='font-size:10.0pt;font-family:宋体;color:black'>语义透明度</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>44</span></p>
+  </td>
+  <td width=233 style='width:174.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>Mean_FFD*#</span></p>
+  </td>
+  <td width=288 style='width:216.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
+  line-height:normal'><span style='font-size:10.0pt;font-family:宋体;color:black'>首次注视时间（</span><span
+  lang=EN-US style='font-size:10.0pt;color:black'>First fixation duration</span><span style='font-size:10.0pt;font-family:宋  体;color:black'>）平均值</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>45</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1005,7 +1064,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>43</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>46</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1026,7 +1085,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>44</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>47</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1047,7 +1106,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>45</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>48</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1068,7 +1127,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>46</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>49</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1091,7 +1150,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>47</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>50</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1113,7 +1172,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>48</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>51</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1138,7 +1197,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>49</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>52</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1162,7 +1221,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>50</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>53</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1194,7 +1253,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>51</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>54</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1213,7 +1272,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>52</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>55</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1232,7 +1291,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>53</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>56</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1251,7 +1310,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>54</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>57</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1270,7 +1329,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>55</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>58</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1289,7 +1348,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>56</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>59</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1308,7 +1367,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>57</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>60</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1335,7 +1394,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>58</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>61</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1354,7 +1413,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>59</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>62</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1373,7 +1432,7 @@ CLRA将持续迭代和更新，并集成更多丰富的功能，如果您对CLRA
   <td width=31 style='width:23.4pt;border:solid windowtext 1.0pt;border-top:
   none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
-  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>60</span></p>
+  line-height:normal'><span lang=EN-US style='font-size:10.0pt;color:black'>63</span></p>
   </td>
   <td width=233 style='width:174.8pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
